@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div id="player">
+            <div id="upload">
+                <img src="./herobackground.jpg" alt="" width="100%" id="background">
+                <input type="file" accept="audio/*" id="upload-input">
+            </div>
+            <div class="contain">
+                <marquee behavior="" direction="">
+                    <h1 id="title">utarthii hi firu hi </h1>
+                </marquee>
+                <p id="size">size 10.6</p>
+                <div id="progress-info">
+                    <span id="current-time">00.00</span>
+                    <div id="progress">
+                        <div id="progress-bar"></div>
+                    </div>
+                    <span id="full-time">10.00</span>
+                </div>
+                <div id="control">
+                    <button id="volume">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </button>
+                        <button id="left-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                    <button id="play-btn">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button id="right-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <button id="loop-btn">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
